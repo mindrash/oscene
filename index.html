@@ -446,6 +446,15 @@
             }
         }
     </style>
+    <script>
+        var x = setInterval(function() {
+            var now = 6000000000;
+            var add = Math.floor(Math.random() * 1000);
+
+            now += add;
+            document.getElementById("followers").innerHTML = now.toLocaleString();
+        }, 1000);
+    </script>
 </head>
 
 <body>
@@ -525,7 +534,7 @@
                     are the foundation of our way of life, and where order and discipline reign supreme. </p>
                 </p>
                 <p style="text-align: right;">
-                    <strong>-- Supreme Influencer (6,900,000,005 Followers)</strong>
+                    <strong>-- Supreme Influencer (<span id="followers">6,900,000,005</span> Followers)</strong>
                 </p>
             </div>
             <div style="text-align:left">
@@ -587,7 +596,7 @@
         </div>
     </div>
     <div class="site-section"
-        style="background-color: #333;color: #fff;width: 80%;max-width: 600px;margin: 1em auto;padding: 2em;opacity:.90;border-radius: 25px;">
+        style="text-align:left;background-color: #333;color: #fff;width: 80%;max-width: 600px;margin: 1em auto;padding: 2em;opacity:.90;border-radius: 25px;">
         <div class="container">
             <h3><span class="star">★</span> Art Specifications</h3>
             See attributes below to access alternate sizes and printable frames.
